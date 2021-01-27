@@ -13,6 +13,7 @@ body{}
     --extra: 800;
     --UPPERCASE: uppercase;
     --transition: all .4s ease-in-out; 
+    --padding: 80px 0;
 }
 
 
@@ -97,9 +98,44 @@ p{
     transition: var(--transition);
     cursor: pointer;
     text-decoration: none;
+    position: relative;
+    z-index: 1;
 }
+
+.btn{
+    background: var(--theme-color);
+    color: var(--white) !important;
+    text-transform: var(--UPPERCASE);
+	padding: 10px 14px;	
+    border-radius: 30px;
+    transition: var(--transition);
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
 .btn_custom:hover{
-  
+    color: #fff;
+}
+
+.btn::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    z-index: -1;
+
+}
+
+.btn_custom:hover::after{
+    width: 100%;
+    border:1px solid #000 !important;
 }
 
 
@@ -187,7 +223,7 @@ p{
 /* Feature_Content-CSS */
 
 .feature_section{
-    padding: 80px 0;
+    padding: var(--padding);
 }
 
 .feature_content{
@@ -276,7 +312,7 @@ p{
 /* Service_Section_CSS */
 
 .service_section{
-    padding: 80px 0;
+    padding: var(--padding);
     background: #fafafa;
 }
 
@@ -451,7 +487,7 @@ p{
 /* Counter_Section_CSS */
 
 .counter_section{
-    padding: 80px 0;
+    padding: var(--padding);
     background: var(--theme-color);
 }
 
@@ -475,7 +511,7 @@ p{
 /* Circle_Section_CSS */
 
 .circle_section{
-    padding: 80px 0;
+    padding: var(--padding);
 }
 
 .circle_content{
@@ -630,7 +666,7 @@ p{
 .table_section{
     background: url(../img/slider2.png) no-repeat center center;
     background-size: cover;
-    padding: 80px 0;
+    padding: var(--padding);
 }
 
 .table_content{
@@ -687,7 +723,7 @@ p{
 /* Blog_Section_CSS */
 
 .blog_section{
-    padding: 80px 0;
+    padding: var(--padding);
 }
 
 .blog_content{
@@ -753,7 +789,7 @@ p{
 /* Feedback_Section_CSS */
 
 .feedback_section{
-    padding: 80px 0;
+    padding: var(--padding);
     background: #fafafa;
 }
 
@@ -802,7 +838,7 @@ p{
 
 .footer_top{
     background:  #101010;
-    padding: 80px 0;
+    padding: var(--padding);
     border-top: 2px solid var(--theme-color);
     font-family: var(--Montserrat);
     font-weight: 500;

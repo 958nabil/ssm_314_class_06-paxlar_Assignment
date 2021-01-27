@@ -595,4 +595,54 @@
     }
 }
 
-@media(max-width: 300px) {}
+@media(max-width: 300px) {
+    .banner_title h1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .steps h2 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .circle p {
+        font-size: 8px;
+        margin-left: -15px;
+    }
+
+    .team_person img {
+        width: 85%;
+    }
+
+    .blog_content ul li span {
+        top: 200px;
+    }
+
+    .blog_content h5 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .service_box p {
+        font-size: 12px;
+    }
+
+    .service_content h2 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .footer_newsletter input {
+        width: 95%;
+        font-size: 10px;
+    }
+
+    .footer_newsletter strong {
+        right: 6px;
+    }
+}
+
+@media (max-width: 280px){
+    
+}
