@@ -1,179 +1,195 @@
 
+/***********************************Responsive_CSS***************************************/
 
-/* Responsive_CSS */
-
-@media(max-width: 1199px) {}
-
-@media(max-width: 991px) {
-    .banner_title h1 {
-        font-size: 40px;
+@media(max-width: 1199px) {
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
     }
 
-    .feature_content img {
-        height: 70px;
-    }
-
-    .feature_content span {
-        margin: 15px 0;
-    }
-
-    .steps_icon {
-        margin-top: 30px;
-    }
-
-    .steps_content {
-        margin-top: 25px;
-    }
-    .steps h2 {
-        font-size: 18px;
-    }
-
-    .steps h2::before {
-        top: 35px;;
-    }
-
-    .steps_content h3 {
-        font-size: 17px;
-        margin-bottom: 10px;
-    }
-
-    .steps_content p {
-        font-size: 13px;
-    }
-
-    .steps_icon span {
-        width: 50px;
-        height: 50px;
-    }
-
-    .counter_content h1 {
-        font-size: 40px;    
-        margin-bottom: 15px;
-    }
-
-    .counter_content span {
-        font-size: 14px;
-    }
-
-    .circle_content img {
-        margin-top: 130px;
+    .support_content img {   
         width: 30%;
     }
 
-    .circle span {
-        width: 50px;
+    .support span {
         height: 50px;
+        width: 50px;
+        line-height: 50px;
     }
 
-    .circle i {
-        top: 15px;
-        left: 18px;
-        font-size: 18px;
+    .bottom_menu ul li {
+        padding: 0 10px;
     }
 
-    .circle p {
-        margin-top: 10px;
-        margin-left: -25px;
-        font-size: 16px;
-    }
-
-    .team_person img {
-        width: 100%;
-    }
-
-    .blog_content ul li span {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 15px;
-        top: 150px;
-        left: 4px;
-    }
-
-    .blog_content h5 {
-        font-size: 14px;
-        padding: 15px;
-        padding-bottom: 5px;
-        line-height: 22px;
-    }
-
-    .blog_content p {
-        font-size: 14px;
-        padding: 0 15px;
-        margin-bottom: 20px;
-    }
-
-    .p {
-        font-size: 16px;
-    }
-
-    .footer_logo img {
-        margin-bottom: 30px;
-        width: 75%;
-    }
-
-    .footer_logo p {
-        color: #989898;
-        font-size: 14px;
-        margin-bottom: 20px;
-        text-align: left;
-    }
-
-    .footer_address ul li {
-        margin-bottom: 20px;
-    }
-
-    .footer_menu ul {
-        padding-left: 0;
-    }
-
-    .footer_logo ul li a {
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-        font-size: 14px;
-    }
-
-    .footer_newsletter input {
-        padding: 0 8px;
-        height: 35px;
-    }
-
-    .footer_newsletter strong {
-        color: var(--white);
-        display: block;
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        right: -28px;
-        bottom: 0px;
-    }
 }
 
-@media(max-width: 767px) {
-    .header_left p {
-        font-size: 10px;  
+
+@media(max-width: 991px) {
+    .navbar {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        display: inline-block;
     }
 
     .banner_section {
-        padding: 140px 0;
+        padding: 120px 0;
     }
 
     .banner_title h1 {
-        font-size: 34px;
-        font-weight: 700;
+        font-size: 36px;
+        font-weight: var(--bold);
     }
 
     .banner_content h4 {
         font-size: 18px;
     }
 
-    .banner_content span {
-        font-size: 13px;
-    }
-
     .banner_section ul li a {
         font-size: 14px;
+        border: 1px solid var(--theme-color);
+    }
+
+    .feature_content {
+        padding: 25px 15px;
+    }
+
+    .feature_content img {
+        height: 85px;
+    }
+
+    .feature_content span {
+        margin: 15px 0;
+    }
+
+    .service_content {
+        padding: 15px;
+    }
+
+    .service_content span {
+        margin: 15px 0;
+    }
+
+    .service_content p {
+        line-height: 24px;
+    }
+
+    .step {
+        margin-top: 40px;
+    }
+
+    .steps h2 {
+        font-size: 19px;
+    }
+
+    .steps h2::after {
+        width: 55px;
+        height: 2px;
+    }
+
+    .steps_icon span {
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+    }
+
+    .steps_content p {
+        font-size: 12px;
+    }
+
+    .money_content h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .money_content span {
+        font-size: 14px;
+    }
+
+    .support p {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .blog_content ul li span {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 18px;
+        margin-top: -30px;
+    }
+
+    .blog_content h5 {
+        font-size: 15px;
+        font-weight: 600;
+        padding: 15px 15px 10px 15px;
+        line-height: 24px;
+    }
+
+    .blog_content p {
+        font-size: 12px;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+
+    .footer_logo img {
+        margin-bottom: 25px;
+        width: 75%;
+    }
+
+    .footer_logo ul li {
+        padding: 0 3px;
+    }
+
+    .footer_logo ul li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .p {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .span {
+        margin-bottom: 15px;
+    }
+
+    .footer_address ul li span {
+        font-size: 11px;
+    }
+
+    .footer_newsletter input {
+        height: 40px;
+    }
+
+    .footer_newsletter button {
+        width: 40px;
+        height: 40px;
+    }
+
+
+}
+
+
+@media(max-width: 767px) {
+    .navbar-brand img {
+        width: 90%;
+    }
+    .navbar {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .banner_section {
+        padding: 80px 0;
     }
 
     .feature_section {
@@ -184,147 +200,169 @@
         margin-bottom: 30px;
     }
 
-    .service_section {
-        padding: 60px 0;
-    }
-
-    .service_content h2 {
+    .heading h2 {
         font-size: 22px;
     }
 
-    .service_content p {
-        max-width: 430px;
+    .heading p {
         margin-top: 15px;
         margin-bottom: 20px;
+        line-height: 24px;
     }
 
-    .service_content span {
+    .heading span {
         width: 60px;
     }
 
-    .steps h2 {
-        font-size: 16px;
-        line-height: 25px;
+    .service_content {
+        padding: 15px;
+        margin-bottom: 30px;
     }
 
-    .steps h2::before {
-        top: 55px;
+    .service_button a {
+        margin-top: 50px;
     }
 
-    .steps_icon span {
-        width: 35px;
-        height: 35px;
+    .step {
+        margin-top: 50px;
     }
 
-    .counter_section {
+    .money_section {
+        padding: 60px 0 50px 0;
+    }
+
+    .money_content span {
+        font-size: 12px;
+    }
+
+    .support_section {
         padding: 60px 0;
     }
 
-    .counter_content h1 {
-        font-size: 30px;
+    .support_content img {
+        width: 40%;
     }
 
-    .counter_content span {
-        font-size: 10px;
-    }
-
-    .circle_section {
-        padding: 60px 0;
-    }
-
-    .circle_content img {
-	    margin-top: 110px;
-	    width: 40%;
-    }
-
-    .circle span {
-        width: 40px;
+    .support span {
         height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 14px;
     }
 
-    .circle i {
-        top: 12px;
-        left: 13px;
-        font-size: 15px;
+    .support p {
+        margin-top: 10px;
+        font-size: 14px;
     }
 
-    .circle2 {
+    .support1 {
+        position: absolute;
+        top: 0%;
+        left: 18%;
+    }
+
+    .support2 {
+        position: absolute;
         top: 0;
-        right: 10%;
+        right: 15%;
     }
 
-    .circle4 {
-        top: 45%;
-        right: -5%;
+    .support3 {
+        position: absolute;
+        top: 57%;
+        left: 15%;
+        transform: translate(-54%, -18%);
     }
 
-    .circle5 {
-        top: 102%;
-        left: 23%;
+    .support4 {
+        position: absolute;
+        top: 53%;
+        right: 1%;
     }
 
-    .circle6 {
-        top: 102%;
-        right: 10%;
+    .support5 {
+        position: absolute;
+        top: 108%;
+        left: 22%;
     }
 
-    .table_section {
+    .support6 {
+        position: absolute;
+        top: 108%;
+        right: 15%;
+    }
+
+    .team_content {
+        margin-bottom: 40px;
+    }
+
+    .table_form input {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .blog_section {
         padding: 60px 0;
     }
 
-    .table_content h2 {
-        font-size: 22px;
+    .blog_content {
+        margin-bottom: 30px;
     }
 
-    .table_content span {
-        width: 60px;
+    .feedback_section {
+        padding: 60px 0;;
     }
 
-    .blog_content ul li span {
-        top: 175px;
-        left: 10px;
+    .client_img {
+        margin-top: 35px;
     }
 
-    .footer_logo {
-        margin-bottom: 50px;
+    .footer_top {
+        padding: 60px 0;
     }
 
     .footer_logo img {
-        margin-bottom: 20px;
-        width: 55%;
+        margin-bottom: 30px;
+        width: 50%;
     }
 
-    .span {
-        margin-bottom: 15px;
+    .footer_logo p {
+        font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .p {
-        margin-bottom: 15px;
+        font-size: 16px;
     }
 
-    .footer_newsletter strong {
-        right: 60px;
+    .span {
+        margin-bottom: 20px;
+    }
+
+    .footer_address {
+        margin-bottom: 30px;
+    }
+
+    .footer_address ul li {
+        margin-bottom: 15px;
     }
 
     .bottom_menu ul li a {
         font-size: 12px;
     }
+
+    .iphone_steps {
+        margin-top: 50px;
+    }
+
+    .steps_content p {
+        font-size: 14px;
+    }
+
 }
 
 
 @media(max-width: 575px) {
-    .navbar {
-        padding: 15px;
-    }
-
-    .navbar-brand img {
-        width: 80%;
-    }
-
-    .banner_section {
-        padding: 80px 0;
-    }
-
     .banner_title h1 {
         font-size: 28px;
         font-weight: 600;
@@ -333,316 +371,262 @@
 
     .banner_content h4 {
         font-size: 16px;
-        font-weight: 600;
+    }
+
+    .banner_content span {
+        font-size: 12px;
     }
 
     .banner_section ul {
-        padding-left: 0;
-        margin-top: 35px;
+        margin-top: 30px;
     }
 
     .banner_section ul li a {
-        padding: 7px 14px;
+        padding: 8px 16px;
+        font-size: 16px;
     }
 
     .feature_content {
-        max-width: 300px;
+        max-width: 340px;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 30px 20px;
+    }
+
+    .feature_content p {
+        line-height: 24px;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    .heading p {
+        line-height: 24px;
+        max-width: 360px;
+    }
+
+    .service_content {
+        padding: 20px;
+        max-width: 360px;
         margin: auto;
         margin-bottom: 30px;
     }
 
-    .service_content h2 {
-        font-size: 20px;
-    }
-
-    .service_content p {
-        max-width: 360px;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        line-height: 24px;
-    }
-
-    .service_box {
-        max-width: 340px;
-        margin: auto;
-        margin-top: 40px;
-    }
-
     .service_button a {
-        padding: 8px 18px;
-        font-size: 12px;
-        margin-top: 45px;
-    }
-
-    .iphone_steps {
-        text-align: center;
-    }
-
-    .steps {
         margin-top: 40px;
+    }
+
+    .money_content {
         text-align: center;
+        margin-bottom: 30px;
     }
 
-    .steps h2 {
-        font-size: 18px;
-        line-height: 25px;
-    }
-
-    .steps h2::before {
-        top: 35px;
-        left: 92px;
-    }
-
-    .steps_icon {
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    .steps_icon span {
-        width: 45px;
-        height: 45px;
-        display: inline-block;
-    }
-
-    .steps_content {
-        margin-top: 30px;
-    }
-
-    .counter_content {
-        margin-bottom: 25px;
-    }
-
-    .counter_content h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-
-    .circle4 {
-        top: 45%;
-        right: 0%;
-    }
-
-    .circle p {
+    .money_content span {
         font-size: 14px;
     }
 
-    .team_person {
-        max-width: 340px;
-        margin: auto;
-        margin-top: 40px;
+    .consultation_section {
+        padding: 60px 0;
     }
 
-    .table_content h2 {
-        font-size: 20px;
-    }
-
-    .table_form input {
-        height: 40px;
-        padding: 0 10px;
-    }
-
-    .submit_button a {
+    .button button {
         padding: 8px 24px;
     }
 
     .blog_content {
-        max-width: 340px;
+        max-width: 360px;
         margin: auto;
-        margin-top: 40px;
+        margin-bottom: 30px;
     }
 
-    .blog_content ul li span {
-        top: 250px;
+    .blog_content h5 {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 20px 20px 10px 20px;
     }
 
-    .footer_newsletter strong {
-        right: 78px;
+    .blog_content p {
+        font-size: 14px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer_address ul li span {
+        font-size: 14px;
+    }
+
+}
+
+
+@media(max-width: 440px) {
+    .banner_section {
+        padding: 70px 0;
+    }
+
+    .banner_section ul li a {
+        font-size: 14px;
+    }
+
+    .steps h2 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .steps h2::after {
+        top: 60px;
+    }
+
+    .steps_section {
+        padding-top: 60px;
+    }
+
+    .support p {
+        margin-top: 8px;
+        font-size: 12px;
+    }
+
+    .table_form input {
+        height: 35px;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .carousel-item {
+        min-height: 565px;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .carousel-caption h5 {
+        font-weight: 600;
+        margin-top: 25px;
+    }
+
+    .carousel-caption strong {
+        margin-top: 10px;
+    }
+
+    .footer_logo {
+        margin-bottom: 40px;
     }
 }
-@media(max-width: 440px) {
+
+
+@media(max-width: 380px) {
     .banner_title h1 {
-        font-size: 26px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .banner_section ul li {
+        padding: 5px;
     }
 
     .banner_section ul li a {
         font-size: 12px;
     }
 
-    .circle p {
+    .feature_content {
+        max-width: 320px;
+    }
+
+    .service_content {
+        max-width: 320px;
+    }
+
+    .service_button a {
+        margin-top: 40px;
         font-size: 12px;
     }
 
-    .circle_content img {
-        margin-top: 95px;
+    .steps_icon span {
+        width: 40px;
+        height: 40px;
+        margin-top: 35px;
     }
 
-    .team_person span {
+    .support4 {
+        position: absolute;
+        top: 53%;
+        right: 0%;
+    }
+
+    .support span {
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
         font-size: 12px;
     }
 
-    .p {
-        font-size: 14px;
+    .support p {
+        margin-top: 6px;
+        font-size: 10px;
+    }
+
+    .blog_content {
+        max-width: 320px;
+    }
+
+    .carousel-item {
+        min-height: 585px;
+    }
+
+    .footer_address ul li span {
+        font-size: 12px;
+    }
+
+    .footer_newsletter input {
+        height: 35px;
+    }
+
+    .footer_newsletter button {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+@media(max-width: 320px) {
+    .banner_title h1 {
+        font-size: 20px;
+    }
+
+
+
+    .steps_content h3 {
+        font-size: 16px;
         margin-bottom: 10px;
     }
 
-    .span {
-        height: 2px;
-        width: 35px;
+    .iphone_steps .logo {
+        width: 130px;
     }
 
-    .footer_newsletter input {
-        padding: 0 8px;
-        height: 35px;
-        width: 85%;
-    }
-
-    .footer_newsletter strong {
-        right: 29px;
-    }
-
-
-
-}
-
-@media(max-width: 380px) {
-    .banner_title h1 {
-        font-size: 22px;
-    }
-
-    .feature_content span {
-        font-size: 16px;
-        margin: 12px 0;
-    }
-
-    .feature_content p {
-        font-size: 12px;
-    }
-
-    .service_content h2 {
-        font-size: 18px;
-    }
-
-    .service_content span {
-        width: 50px;
-    }
-
-    .service_content p {
-        font-size: 13px;
-
-    }
-
-    .service_box p {
-        font-size: 13px;
-        line-height: 24px;
-
-    }
-
-    .steps h2 {
-        font-size: 16px;
-    }
-
-    .steps h2::before {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 2px;
-        background: none;
-    }
-
-    .steps_content h3 {
-        font-size: 15px;
-    }
-
-    .steps_content p {
-        font-size: 12px;
-    }
-
-    .circle span {
-        width: 30px;
-        height: 30px;
-    }
-
-    .circle i {
-        top: 9px;
-        left: 10px;
-        font-size: 12px;
-    }
-
-    .circle p {
-        font-size: 10px;
-    }
-
-    .table_content h2 {
-        font-size: 18px;
-    }
-
-    .table_content span {
-        width: 50px;
-    }
-
-    .footer_newsletter input {
-        padding: 0 0px;
-    }
-
-    .footer_newsletter input {
-        padding: 0 0px;
-        height: 35px;
-        width: 85%;
-    }
-
-    .footer_newsletter strong {
-        right: 23px;
-    }
-}
-
-@media(max-width: 300px) {
-    .banner_title h1 {
-        font-size: 28px;
-        line-height: 35px;
-    }
-
-    .steps h2 {
-        font-size: 20px;
-        line-height: 35px;
-    }
-
-    .circle p {
-        font-size: 8px;
-        margin-left: -15px;
-    }
-
-    .team_person img {
-        width: 85%;
+    .support_content img {
+        width: 32%;
     }
 
     .blog_content ul li span {
-        top: 200px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        margin-top: -30px;
     }
 
-    .blog_content h5 {
-        font-size: 15px;
-        font-weight: 600;
+    .footer_logo p {
+        text-align: left;
+        line-height: 22px;
     }
 
-    .service_box p {
-        font-size: 12px;
-    }
 
-    .service_content h2 {
-        font-size: 18px;
-        line-height: 28px;
-    }
 
     .footer_newsletter input {
-        width: 95%;
-        font-size: 10px;
+        padding: 0 10px;
     }
-
-    .footer_newsletter strong {
-        right: 6px;
-    }
-}
-
-@media (max-width: 280px){
-    
 }
